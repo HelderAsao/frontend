@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="shortcut icon" href="assets/images/favicon-32x32.png" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+  <title>Frontend Mentor | Contact form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <section>
+
+    <div class="container">
+
+      <h1>Contact Us</h1>
+
+
+      <div class="names">
+
+        <label for="firstname" class="firstname">First Name</label>
+
+
+
+
+
+
+
+
+        <label for="lastname" class="lastname">Last Name</label>
+
+
+      </div>
+
+      <div class="inputs">
+        <input type="text" class="inputname">
+        <input type="text" class="inputname2">
+
+
+      </div>
+      <div class="fieldnames">
+        <div class="fieldname">This field is required</div>
+        <div class="fieldlastname">This field is required</div>
+      </div>
+
+      <div class="emailadress">
+
+        <br><label for="email">Email Address</label></br>
+
+        <input type="text" class="email">
+        <div class="please">Please enter a valid email address</div>
+
+      </div>
+      <div class="query">Query Type </div>
+
+      <div class="query-options">
+        <div class="general_enquiry"  change="teste()">
+          <input type="radio" name="inputrad" id="general" onclick="general()">
+
+          <label for="general">General Enquiry</label>
+        </div>
+
+        <div class="general_enquiry_2">
+          <input type="radio" name="inputrad" id="inputsupport" onclick="support()">
+
+          <label for="inputsupport">Support Request</label>
+
+        </div>
+
+      </div>
+      <div class="pleasequery">Please select a query type</div>
+
+
+
+      <div class="message">Message</div>
+
+      <!-- This field is required-->
+
+      <textarea name="inputmessage" id="inputmessage"></textarea>
+      
+
+
+      <div class="finalfield">This field is required</div>
+      <div class="consent">
+        <input type="checkbox" name="submit" id="submitcheck">
+        <label for="submitcheck"> I consent to being contacted by the team</label>
+      </div>
+      <div class="errorsubmit">To submit this form, please consent to being contacted</div>
+
+      <button class="submit" onclick="submit()">Submit </button>
+
+      <div class="alertpai"> <!--Tive que criar um elemento pai para colocar com display: none, pois o filho .alert ja estava com display:flex-->
+        <div class="alert">
+          <i class="fa-regular fa-circle-check icon_check"></i>
+          <div class="h2alert">Message Sent!</div>
+          <div class="h3alert">Thanks for completing the form. We'll be in touch soon!</div>
+        </div>
+      </div>
+
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+        Coded by <a href="#">Helder Asao</a>.
+      </div>
+    </div>
+    
+  </section>
+<script src="script.js"></script>
+
+</body>
+
+</html>

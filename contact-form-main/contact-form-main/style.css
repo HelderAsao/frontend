@@ -1,0 +1,262 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+
+body{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: hsl(148, 38%, 91%);
+    
+    
+    
+}
+.container{
+    min-width: 600px;
+    width: 100%;
+    height:50%;
+    border: none;
+    border-radius: 20px;
+    margin: auto;
+    padding: 30px;
+    background-color: white;
+    position: relative;
+    
+}
+
+h1{
+    color: black;
+    margin-bottom: 20px;
+}
+
+
+.names{
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    display: flex;
+    justify-content: space-between;
+
+}
+.firstname {
+    width: 48%;
+}
+.lastname{
+    width: 48%;
+    margin-right: 15px;
+}
+.inputname, .inputname2{
+    
+    border-radius: 5px;
+    width: 48%;
+    height:45px;
+    margin-top: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.486);
+    font-size: 1.2rem;
+    padding-left: 10px;
+    
+    
+
+}
+
+.email{
+    display: block;
+     
+    border-radius: 5px;
+    width: 100%;
+    height:45px;
+    margin-top: 10px;
+    gap: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.486);
+    font-size: 1.2rem;
+    padding-left: 10px;
+    
+}
+
+
+
+.query-options{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.general_enquiry, .general_enquiry_2{
+    border: 1px solid rgba(0, 0, 0, 0.486);
+    border-radius: 5px;
+    width: 49.5%;
+    height:45px;
+    
+    
+    
+    align-items: center;
+    padding-left: 20px;
+    display: flex;
+    gap: 10px;
+
+}
+
+.query{
+    margin-top: 20px;
+}
+
+.message{
+    margin-top:20px;
+}
+
+#inputmessage{
+    display: block;
+     
+    border-radius: 5px;
+    width: 100%;
+    height:105px;
+    margin-top: 10px;
+    gap: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.486);
+    font-size: 1.2rem;
+    padding-left: 10px;
+    padding-top: 5px;
+    box-sizing: border-box;
+    padding: 10px;
+    
+
+}
+.consent{
+    margin-top: 20px;
+}
+.submit{
+    
+    padding: 5px;
+    border-radius: 5px;
+    margin: 10px auto;
+    display: block;
+    background-color:  hsl(169, 82%, 27%);
+    color: white;
+    width: 100%;
+    height: 50px;
+    cursor: pointer;
+    font-size: 1.3rem;
+    font-weight: bold;
+
+   
+    
+}
+
+.submit:active{
+    background-color: white;
+    color: hsl(169, 82%, 27%);
+    border:1px solid  hsl(169, 82%, 27%);
+}
+.fieldnames{
+    display: flex;
+}
+.fieldname{
+    
+    display: flex;
+    margin-top: 10px;
+    color: hsl(0, 66%, 54%);
+    display:none ;
+}
+.fieldlastname{
+    position: absolute; /*Incerto*/
+    margin-left: 265px;
+    display: flex;
+    margin-top: 10px;
+    color: hsl(0, 66%, 54%);
+    display: none;
+}
+.please{ 
+    display: flex;
+    margin-top: 10px;
+    color: hsl(0, 66%, 54%);
+    display:none;
+}
+
+.pleasequery{
+    display: flex;
+    margin-top: 10px;
+    color: hsl(0, 66%, 54%);
+    display:none;
+}
+.finalfield{
+    display: flex;
+    margin-top: 10px;
+    color: hsl(0, 66%, 54%);
+    display: none;
+    
+}
+.errorsubmit{
+    display: flex;
+    margin-top: 10px;
+    color: hsl(0, 66%, 54%);
+    margin-bottom: 50px;
+    display: none;
+}
+/*
+input#submit{
+    background-color: hsl(169, 82%, 27%);
+    color: yellow;
+}
+input[type="radio"]:checked::before{
+    background-color: green;
+}
+*/
+
+
+
+.general:checked  .general_enquiry{
+    background-color:hsl(148, 38%, 91%);
+    
+    border: 1px solid hsl(169, 82%, 27%);
+}
+.alertpai{
+    display: none;
+}
+.alert{
+    border: 1px solid black;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items:center;
+    
+    right: 15%;
+    top: -287px;
+    background-color: hsl(187, 24%, 22%);
+    width: 425px;
+    height: 100px;
+    flex-direction: column;
+    color: white;
+    border-radius: 15px;
+    padding: 15px;
+    
+   
+}
+
+.h2alert{
+    font-size: 1.1rem;
+    font-weight: 600;
+    display: flex;
+    top: -10px;
+    left: -70px;
+    position: relative;
+   
+}
+
+.h3alert{
+    font-size:0.9rem;
+    position: relative;
+    bottom: -7px;
+}
+ .icon_check{
+    
+    color: white;
+    position: relative; /*ele está na posição relativa incial importada*/
+    top: 8.5px;
+    left: -160px;
+}
